@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    <title>Responsive Weather App</title>
+  </head>
+
+  <body>
+    <main class="bg-[url('https://static6.depositphotos.com/1011549/652/i/450/depositphotos_6527086-stock-photo-clouds-in-the-blue.jpg')] bg-no-repeat bg-cover">
+    <section class="h-10 bg-transparent flex items-center justify-center space-x-4">
+      <form id="searchBar_form">
+      <input id="searchBar_Text" type="search" class="w-56 bg-transparent rounded-lg" placeholder="Enter City,State And Country">
+      <button id="searchBbutton" type="submit"><i><i class="fa-solid fa-magnifying-glass"></i> </i></button>
+    </form>
+    </section> 
+    <section class="grid grid-rows-2 grid-cols-2 h-44 bg-transparent">
+      <div class="font-extrabold place-self-center text-8xl pt-14">59
+       <sup class="text-sm -left-7 -top-16"> <i class="fa-solid fa-circle-notch"></i></sup> 
+        <small class="text-2xl font-normal">F</small>
+        </div>
+      <div class="place-self-center text-3xl pt-16"> <div>High <b>62</b> </div> <div>Low <b>39</b></div> </div>
+    </section>
+    <section class="bg-transparent h-36 grid">
+      <div class="place-self-center">Clear sky</div>
+      <div class="place-self-center">feels like</div>
+      <div class="place-self-center">Humidity</div>
+      <div class="place-self-center">Wind</div>
+    </section>
+    <section class="h-11 bg-transparent flex justify-around">
+      
+        <button id="getLocation"><i class="fa-solid fa-location-dot"></i></button>
+        <button id="home"><i class="fa-solid fa-house"></i></button>
+        <button id="saveLocation"><i class="fa-solid fa-floppy-disk"></i></button>
+        <button id="refresh"><i class="fa-solid fa-arrows-rotate"></i></button>
+      
+    </section>
+    <section class="bg-transparent">
+      <h2 id="dailyForecast__title">Six Day Forecast</h2>
+      <div id="dailyForecast__contents"></div>
+    </section>
+   </main>
+  </body>
+  <script type="module" src="Weather-app.js"></script>
+</html>
